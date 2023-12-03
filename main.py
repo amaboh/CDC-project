@@ -49,7 +49,7 @@ def create_table(conn):
     conn.commit()
     
     
-if __name__ == "__main__":
+
     conn = psycopg2.connect(
         host='localhost',
         database='financial_db',
@@ -77,3 +77,6 @@ if __name__ == "__main__":
     
     cur.close()
     conn.commit()
+    
+ 
+
